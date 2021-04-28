@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,20 +13,98 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FrontloopsElement02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYA-fp-VbR">
+                                <rect key="frame" x="30" y="313" width="368" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OBG-Mk-b1B">
+                                        <rect key="frame" x="159.66666666666666" y="52.666666666666686" width="49" height="195"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="switch1" translatesAutoresizingMaskIntoConstraints="NO" id="WkW-5s-hQB" userLabel="Switch1">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qFL-c6-4nq"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="switch2" translatesAutoresizingMaskIntoConstraints="NO" id="HDw-lu-9GL" userLabel="Switch2">
+                                                <rect key="frame" x="0.0" y="41" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="0lA-40-X4s"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="switch3" translatesAutoresizingMaskIntoConstraints="NO" id="fWA-8s-kko" userLabel="Switch3">
+                                                <rect key="frame" x="0.0" y="82" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="89L-oI-ltj"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="switch4" translatesAutoresizingMaskIntoConstraints="NO" id="2h5-1S-f4Q" userLabel="Switch4">
+                                                <rect key="frame" x="0.0" y="123" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hCK-56-HsZ"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="switch5" translatesAutoresizingMaskIntoConstraints="NO" id="5gl-r4-QTK" userLabel="Switch5">
+                                                <rect key="frame" x="0.0" y="163.99999999999994" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="eFE-F8-tfW"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="OBG-Mk-b1B" firstAttribute="centerY" secondItem="LYA-fp-VbR" secondAttribute="centerY" id="ECM-tZ-u1Y"/>
+                                    <constraint firstItem="OBG-Mk-b1B" firstAttribute="centerX" secondItem="LYA-fp-VbR" secondAttribute="centerX" id="Kx6-Xl-Xpz"/>
+                                    <constraint firstAttribute="height" constant="300" id="Qcd-pQ-LUy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LYA-fp-VbR" secondAttribute="trailing" constant="30" id="Iq4-zV-BTe"/>
+                            <constraint firstItem="LYA-fp-VbR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="NON-vI-7yC"/>
+                            <constraint firstItem="LYA-fp-VbR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zXa-W1-BUd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="container" destination="LYA-fp-VbR" id="fod-im-JVE"/>
+                        <outlet property="switch1" destination="WkW-5s-hQB" id="deZ-l1-XGT"/>
+                        <outlet property="switch2" destination="HDw-lu-9GL" id="fKL-VF-ROc"/>
+                        <outlet property="switch3" destination="fWA-8s-kko" id="lJl-yt-9wi"/>
+                        <outlet property="switch4" destination="2h5-1S-f4Q" id="hML-uA-JUu"/>
+                        <outlet property="switch5" destination="5gl-r4-QTK" id="giS-Ma-B90"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-214" y="94"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="2S2-CI-qda">
+            <objects>
+                <viewController id="Ary-H2-04j" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AcT-3h-777">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d1O-BD-d1S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475" y="-322"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
